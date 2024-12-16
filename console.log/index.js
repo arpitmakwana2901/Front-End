@@ -1,0 +1,20 @@
+
+console.log('|**************************************************************|');
+console.log('|                         Report Card                          |');
+console.log('|**************************************************************|');
+console.log('|  Name        : John Doe                                      |');
+console.log('|  Roll Number : 23                                            |');
+console.log('|**************************************************************|');
+console.log('|  Subject             *     Max Marks   *   Marks Obtained    |');
+console.log('|**************************************************************|');
+console.log('|  Mathematics         *       100       *         95          |');
+console.log('|  Science             *       100       *         99.99       |');
+console.log('|  English             *       100       *         100         |');
+console.log('|  Social Science      *       100       *         95          |');
+console.log('|  Physical Education  *       100       *         99.85       |');
+console.log('|**************************************************************|');
+console.log('|  Total               *       100       *         489.84      |');
+console.log('|  Percentage          :   97.968                              |');
+console.log('|**************************************************************|');
+console.log('|  Status  :   PASS          :   97.968                        |');
+console.log('****************************************************************');
