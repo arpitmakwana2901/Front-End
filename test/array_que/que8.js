@@ -11,3 +11,4 @@ main();
 
 const phone = [9876543210, 9123456789, 9876543210, 9000000000];
 console.log(main(phone));
+
