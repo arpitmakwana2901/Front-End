@@ -9,9 +9,9 @@
 // idnexOf = 
 // findIndex =
 // includes =
-// every
-// some
-// reduce 
+// every = 
+// some =
+// reduce = 
 
 // var array1 = [10, 20, 30, 40, 50];
 //     var array2 = [60, 70, 80, 90, 100];
@@ -54,5 +54,36 @@
 
 // for Each  ------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// let sum = 0;
+// let number = [1,1,1,1,1]
+
+// const numData = number.forEach((element)=>{
+//     console.log(element);
+//     sum += element;
+// })
+// console.log(sum);
+// console.log(numData);
+
+// indexof --------------->>>>>>>>>>>>>>>>>>.
+
+// let number = [12,13,14,15,16,17,18,19,20]
+// const value = number.indexOf(14);
+// console.log(value);
+
+// findindex  ---------->>>>>>>>>>>>>>>>>>>>>.
+
+// let number = [12,13,14,15,16,17,18,19,20]
+// const value = number.findIndex((element)=>{
+//     return element>15
+// })
+// console.log(value);
 
 
+// includes   ------------>>>>>>>>>>>>>>>>>>
+
+// let sub = ["html","css","js"]
+// let storeSub = sub.includes("html")
+// console.log(storeSub);
+
+
+// every

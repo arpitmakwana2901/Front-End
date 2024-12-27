@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        .main-container{
+            height: 100vh;
+            width: 50%;
+            background-color: aquamarine;
+        }
+        .div{
+            height: 400px;  
+            width: 400px;
+            align-items: center;
+        }
+
+        .img{
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-left: 175px;
+            margin-top: 175px;
+        }
+
+        .btn-div{
+            margin-left: 55px;
+            margin-top: 25px;
+            align-items: center;
+            margin-left: 300px;
+            margin-top: 200px;
+        }
+
+        .back-btn{
+            margin-right: 10px;
+        }
+
+        .next-btn{
+            margin-right: 80px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="div">
+        <img class="img" id="image" src="" alt="">
+    </div>
+    
+    <div class="btn-div">
+        <button class="back-btn" id="back">back</button>
+        <button class="next-btn" id="next">next</button>
+    </div>
+</div>
+
+
+<script>
+
+    let array = [
+        "https://wallpaperaccess.com/full/1109658.jpg",
+        "https://wallpapercave.com/wp/wp6595540.jpg",
+        "https://cdn.pixabay.com/photo/2023/10/31/05/24/shiva-8354335_960_720.png"
+    ];
+
+    let image = document.getElementById("image");
+    let back = document.getElementById("back");
+    let next = document.getElementById("next");
+    let count = 0;
+    
+    next.addEventListener("click",()=>{
+        if(count == array.length-1){
+        count = 0
+    }else
+        {
+        count++
+        }
+        showData()
+    })
+
+
+    back.addEventListener("click",()=>{
+
+if(count == 0){
+  count = array.length-1
+}else{
+  count--
+}
+showData()
+})
+
+function showData(){
+  image.src = array[count]
+}
+
+showData()
+
+</script>
+</body>
+</html>

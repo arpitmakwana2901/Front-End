@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+</head>
+<body>
+    <img src="" id="image" alt="">
+    <button id="next-btn">next</button>
+    <button id="back-btn">back</button>
+    <script>
+        let array = [
+            "https://www.japantimes.co.jp/uploads/imported_images/uploads/2014/04/w3-jason-a-20140412-e1397227068166.jpg",
+            "https://kaizen.com/wp-content/uploads/2022/10/cover_masaaki_imai_highres.jpg"
+        ]
+
+        let image = document.getElementById("image");
+        let next = document.getElementById("next");
+        let back = document.getElementById("back");
+        let count= 0;
+
+        next.addEventListener("click",()=>{
+            if(count == array.length-1){
+                count = 0;
+            }else
+            {
+                count++
+            }
+            showData()
+        })
+        
+        back.addEventListener("click",()=>{
+            if(count == 0){
+               count = array.length-1;
+            }else
+            {
+                count--
+            }
+            showData();
+        })
+
+
+        function showData(){
+            image.src= array[count];
+        }
+
+        showData();
+        
+    </script>
+</body>
+</html>
