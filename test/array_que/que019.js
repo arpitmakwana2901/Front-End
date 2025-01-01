@@ -22,6 +22,7 @@
 // console.log(`there are ${count} vowels`);
 
 
+
 // simple run   --------------->>>>>>>>>>>>>>>>>>>>
 
 const vowels = [

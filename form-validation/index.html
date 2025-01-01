@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="">Email:</label>
+        <input type="email" placeholder="Email" id="email" onblur="emailValidation()" >
+        <p id="error1"></p>
+
+        <label for="">Password:</label>
+        <input type="password" id="password" placeholder="passoword" onkeyup="passwordValidation()">
+        <p id="error2"></p>
+
+        <label for="">Date:</label>
+        <input type="date" id="date" placeholder="please enter date" onblur="dateValidation()">
+        <p id="error3"></p>
+
+
+        <button id="btn" type="button">Submit</button>
+    </form>
+
+    <script>
+        let error1 = document.getElementById("error1")
+        let error2 = document.getElementById("error2")
+
+        function emailValidation (){
+            let email = document.getElementById("email")
+
+            if(email.value == ""){
+                error1.innerHTML = "please enter valid email address"
+                error1.style.color="red"
+            } else {
+                error1.innerText = "";
+            }
+        }
+
+        function passwordValidation () {
+            let password = document.getElementById("password")
+            // const passwordPatten =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            if(password.value == ""){
+
+                if(password.length <= 6){
+                console.log("password must be longer than 6 charcaters");
+                }
+
+                if(password.length >=10){
+                    password.push()
+                }
+                error2.innerHTML = "please enter valid password"
+                error2.style.color = "red"
+            }
+            else{
+                // error2.innerHTML = ""
+                error2.innerHTML = "successfull"
+                error2.style.color="green"
+            }
+        }
+        function dateValidation(){
+            let date = document.getElementById("date") 
+            if(date.value == ""){
+
+            }
+        }
+
+    </script>
+</body>
+</html>

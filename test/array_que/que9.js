@@ -7,9 +7,7 @@ let sum = 0;
 
 function main(){
     number.sort((a,b) =>b-a);
-    // console.log(number);
-    console.log(number[0]);
-    
+    console.log(number[0]); 
 }
 
 main();
