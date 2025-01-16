@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        #container img {
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="title">
+    <input type="text" id="image">
+    <input type="text" id="price">
+    <button id="add">Add to cart</button>
+    <div id="container"></div>
+
+    <script>
+        let productArray = JSON.parse(localStorage.getItem("todoData")) || []
+        // let productArray = []
+        let container = document.querySelector("#container")
+        let add = document.querySelector("#add")
+
+        add.addEventListener("click",()=>{
+
+            let title = document.querySelector("#title").value;
+            let image = document.querySelector("#image").value;
+            let price = document.querySelector("#price").value;
+
+            // productArray.push({
+            //     proTitle:title.value,
+            //     url:image.value,
+            //     proPrice :price.value
+            // })
+            
+            productArray.push({title,image,price})
+            console.log(productArray);
+            localStorage.setItem("todoData",JSON.stringify(productArray))
+            showData()
+
+            title.innerText = ""
+            image.innerText = ""
+            price.innerText = ""
+        })
+
+        function showData(){
+            container.innerHTML = ""
+            productArray.forEach((product)=>{
+
+            
+            let card = document.createElement("div")
+            
+            let title = document.createElement("h1")
+            title.innerText = product.title;
+                
+            let image = document.createElement("img")
+            image.src = product.image;
+
+            let price = document.createElement("p")
+            price.innerText = `${product.price}`
+
+            card.append(title,image,price)
+            container.append(card)
+            
+            })
+        }
+
+        showData()
+    </script>
+</body>
+</html>

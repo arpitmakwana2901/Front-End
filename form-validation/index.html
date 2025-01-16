@@ -9,19 +9,48 @@
     <form action="">
 
         <label for="">Email:</label>
-        <input type="email" placeholder="Email" id="email" onblur="emailValidation()" >
+        <input type="email" placeholder="Email" id="email"  >
         <p id="error1"></p>
 
         <label for="">Password:</label>
-        <input type="password" id="password" placeholder="passoword" onkeyup="passwordValidation()">
+        <input type="password" id="password" placeholder="passoword" >
         <p id="error2"></p>
 
         <label for="">Date:</label>
-        <input type="date" id="date" placeholder="please enter date" onblur="dateValidation()">
+        <input type="date" id="date" placeholder="please enter date" >
         <p id="error3"></p>
 
+        <label for="">Phone No:</label>
+        <input type="number" id="number" placeholder="please enter number">
+        <p id="error4"></p>
 
+<!-- Hobby -->
+        <label for="hobby" >Hobby :</label>
+        <label for="" >cricket</label>
+        <input type="checkbox"  id="cricket_hobby" value="cricket" name="hobby_input">
+
+        <!-- <label for=""></label>FootBall</label>
+        <input type="checkbox"  id="football_hobby" value="FootBall" name="hobby_input">
+        
+        <label for=""></label>Boxing</label>
+        <input type="checkbox"  id="boxing_hobby" value="Boxing" name="hobby_input">
+         -->
+        <label for="">Driving</label>
+        <input type="checkbox" id="driving_hobby" value="Driving" name="hobby_input">
+        <p  id="error5"></p>
+
+<!--Gender  -->
+        <label for="" >Gender:</label>
+
+        <label for="">Male</label>
+        <input  type="radio" id="gender" name="gender" value="Male">
+
+        <label for="">Female</label>
+        <input type="radio" name="gender" id="gender" value="Female">
+        <p id="error6"></p>
+            
         <button id="btn" type="button">Submit</button>
+       
     </form>
 
     <script>
@@ -32,41 +61,183 @@
             let email = document.getElementById("email")
 
             if(email.value == ""){
-                error1.innerHTML = "please enter valid email address"
+                error1.innerText = "please enter valid email address"
                 error1.style.color="red"
             } else {
                 error1.innerText = "";
             }
         }
 
-        function passwordValidation () {
+        function passwordValidation(){
             let password = document.getElementById("password")
-            // const passwordPatten =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
             if(password.value == ""){
-
-                if(password.length <= 6){
-                console.log("password must be longer than 6 charcaters");
-                }
-
-                if(password.length >=10){
-                    password.push()
-                }
-                error2.innerHTML = "please enter valid password"
+                error2.innerText = "please enter valid password"
                 error2.style.color = "red"
-            }
-            else{
-                // error2.innerHTML = ""
-                error2.innerHTML = "successfull"
-                error2.style.color="green"
+            }else{
+                error2.innerText = ""
             }
         }
-        function dateValidation(){
-            let date = document.getElementById("date") 
-            if(date.value == ""){
 
+        function dateValidation (){
+            let date = document.getElementById("date")
+
+            if(date.value == ""){
+                error3.innerText = "please enter valid date"
+                error3.style.color = "red"
+            }else{
+                error3.innerText = ""
+                error3.style.color = "green"
             }
         }
+
+        function numberValidation(){
+            let number = document.getElementById("number")
+            if(number.value == ""){
+                error4.innerText = "please enter valid number"
+                error4.style.color = "red"
+            }else{   
+                error4.innerText = ""
+            }
+        }
+
+// Hobby
+
+        // function hobby (){
+           
+        //     let cricket = document.getElementById("cricket_hobby")
+        //     console.log(cricket);
+            
+        //     let football = document.getElementById("football_hobby")
+        //     console.log(football);
+            
+        //     let boxing = document.getElementById("boxing_hobby")
+        //     let driving = document.getElementById("driving_hobby")
+
+        //     if(!cricket.checked || !football.checked || !boxing.checked || !driving.checked){
+        //         error5.innerText = "please enter valid date"
+        //         error5.style.color = "red"
+             
+        //     }else{
+        //         error5.innerText = ""
+        //         // return true
+        //     }
+        // }
+
+
+    //         function hobbyValidation(){
+    //         let hobbies = document.querySelectorAll('input[type="checkbox"]:checked');
+    //         let error5 = document.getElementById("error5");
+
+    //     if(hobbies.length === 0){
+    //     error5.innerText = "Please select at least one hobby";
+    //     error5.style.color = "red";
+    //     } else {
+    //     error5.innerText = "";
+    //     }
+    // }
+    
+    // let hobby = document.querySelectorAll("#hobby")
+    //     function hobbyValidation(){
+    //     let valid = false;
+
+    //         for(i=0;i<hobby.length; i++){
+    //             if(!valid){
+    //                 if(hobby[i].checked){
+    //                     valid = true;
+    //                     error5.innerText = ""
+    //                 }
+    //             }
+                
+    //             if(!valid){
+    //                 error5.innerText  = "please select hobby"
+    //                 error5.style.color = "red"
+    //             }
+    //         }
+    //     }
+
+    // console.log(hobby);
+
+
+// Gender
+
+
+    //     function genderValidation(){
+    //         let gender = document.getElementById("gender")
+    //         let valid = false
+
+    //         for(i=0;i<gender.length;i++){
+    //             if(!valid){
+    //                 if(gender[i].checked){
+    //                     valid = true
+    //                     error6.innerText=""
+    //                 }
+                    
+    //             }
+            
+
+    //         if(!valid){
+    //             error6.innerText = "please select gender"
+    //             error6.innerText = "red"
+    //         }
+    //     }
+    // }
+
+
+
+// Hobby
+
+    function hobbyValidation(){
+        // const selectedHobby = document.querySelectorAll('input[name="hobby_input"]:checked')
+        const hobby = document.getElementById("cricket_hobby");
+        const driving = document.getElementById("driving_hobby");
+        const error5 = document.getElementById("error5")
+
+        if(!cricket_hobby.checked || !driving_hobby.checked){
+            error5.innerText = "please select hobby"
+            error5.style.color = "red"
+        }else{
+            error5.innerText="";
+        }
+    }
+
+// Gender
+
+//     function genderValidation() {
+//     const selectedGender = document.querySelector('input[name="gender"]:checked');
+// ('input[name="gender"]:checked') ----------------------->>>>>>>>>>>>>>  Attribute Selector
+//     const error6 = document.getElementById("error6");
+
+//     if (!selectedGender) {
+//         error6.innerText = "Please select a gender.";
+//         error6.style.color = "red"
+//     } else {
+//         error6.innerText = ""; 
+//     }
+// }
+
+
+function genderValidation(){
+    const selectedGender = document.querySelector('input[name="gender"]:checked')
+    const error6 = document.getElementById("error6")
+
+    if(!selectedGender){
+        error6.innerText = "please select gender"
+        error6.style.color = "red"
+    }else{
+        error6.innerText = ""
+    }
+}
+
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click",()=>{
+            emailValidation()
+            passwordValidation()
+            dateValidation()
+            numberValidation()
+            hobbyValidation()
+            genderValidation()
+        })
 
     </script>
 </body>

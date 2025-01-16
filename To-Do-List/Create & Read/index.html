@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="add">add</button>
+    <div id="container"></div>
+
+    <script>
+        let todolist = [];
+
+        let text = document.querySelector("#text")
+        let add = document.querySelector("#add")
+        let container = document.querySelector("#container")
+
+        function push(){
+            todolist.push(text.value)
+            console.log(text.value);
+            text.value="";
+        }
+
+
+       function show (){
+
+              container.innerHTML = ""
+            todolist.forEach((element)=>{
+                let card = document.createElement("div")
+                let para = document.createElement("p")
+
+                container.append(card)
+                card.append(para)
+
+                // para.innerText = element;
+            })
+        }
+
+        add.addEventListener("click",()=>{
+            if(text.value == " "){
+                alert("Plese enter value")
+                return;
+            }
+            else{
+                push()
+                show()
+            }
+            
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="add">add</button>
+    <div id="container"></div>
+
+    <script>
+        let todolist = JSON.parse(localStorage.getItem("todoData"))||[];
+
+        let text = document.querySelector("#text")
+        let add = document.querySelector("#add")
+        let container = document.querySelector("#container")
+
+        add.addEventListener("click",()=>{
+            if(text.value == ""){
+                alert("Please Enter Value")
+                returnl;
+            }
+            todolist.push(text.value)
+            console.log(todolist);
+
+            localStorage.setItem("todoData",JSON.stringify(todolist))
+            showData();
+
+            text.value = ""
+        })
+
+        function showData (){
+            container.innerHTML = ""
+            todolist.forEach((element,index)=>{
+                let card = document.createElement("card")
+                let paragraph = document.createElement("p")
+
+                container.append(card)
+                card.append(paragraph)
+
+                paragraph.innerHTML = element;
+                
+            })
+        }
+        showData();
+</script>
+</body>
+</html>

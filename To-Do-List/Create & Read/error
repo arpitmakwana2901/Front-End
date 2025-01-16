@@ -1,0 +1,2 @@
+// quantity: parseInt(productQuantity.value)
+// quantity: parseInt(newQuantity)

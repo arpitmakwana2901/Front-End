@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local Storege</title>
+    </head>
+    <body>
+
+        <p id="text"></p>   
+        <button id="btn">Clear Local Storege</button>
+
+        <script>
+
+            let object = {
+            name:"jay",
+            age : 45,
+            power : "money"
+            }
+            
+            let btn = document.querySelector("#btn")
+            let array = [];
+            let array2 = [];
+
+            btn.addEventListener("click",()=>{
+                
+                for(let key in object){
+                    array.push(key);
+                    array2.push(object[key]);
+                }
+
+                console.log(array);
+                console.log(array2);
+
+            })
+
+        </script>
+
+    </body>
+    </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Cart</h1>
+    <input id="productName" type="text" placeholder="Enter product name">
+    <input type="text" id="productImage" placeholder="Product image URL">
+    <input type="number" id="productQuantity" placeholder="Quantity" min="1">
+    <button id="addProduct">Add to Cart</button>
+    <!-- <h2>Cart</h2> -->
+    <div id="cartContainer"></div>
+   
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cartData")) || [];
+
+        const productName = document.querySelector("#productName");
+        const productImage = document.querySelector("#productImage");
+        const productQuantity = document.querySelector("#productQuantity");
+        const addProduct = document.querySelector("#addProduct");
+        const cartContainer = document.querySelector("#cartContainer");
+
+        addProduct.addEventListener("click", () => {
+            if (!productName.value || !productImage.value || !productQuantity.value) {
+                alert("Please fill all fields");
+                return;
+            }
+
+            cart.push({ 
+                name: productName.value, 
+                image: productImage.value, 
+                
+            });
+
+            localStorage.setItem("cartData", JSON.stringify(cart));
+            displayCart();
+        });
+
+        function showData() {
+            cartContainer.innerHTML = "";
+            cart.forEach((item, index) => {
+                let card = document.createElement("div");
+                let para = document.createElement("p");
+                let img = document.createElement("img");
+                let quantity = document.createElement("p");
+                let edit = document.createElement("button");
+                edit.textContent = "Edit";
+
+                let del = document.createElement("button");
+                del.textContent = "Delete";
+                
+                img.src = item.image;
+                img.style.width = "100px"; 
+                para.innerText = `Product: ${item.name}`;
+                quantity.innerText = `Quantity: ${item.quantity}`;
+                
+                
+
+                edit.addEventListener("click", () => {
+                    let newName = prompt("Edit product name:", item.name);
+                    let newImage = prompt("Edit image URL:", item.image);
+                    let newQuantity = prompt("Edit quantity:", item.quantity);
+
+                    cart[index] = {
+                        name: newName,
+                        image: newImage,
+                        quantity: item.quantity
+                    };
+
+                    localStorage.setItem("cartData", JSON.stringify(cart));
+                    showData();
+                });
+
+                del.addEventListener("click", () => {
+                    cart = cart.filter((ele, i) => i !== index);
+                    localStorage.setItem("cartData", JSON.stringify(cart));
+                    showData();
+                });
+
+                card.append(para, img, quantity, del, edit);
+                cartContainer.append(card);
+            });
+        }
+
+        showData();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

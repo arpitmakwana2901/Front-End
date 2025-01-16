@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <input id="text" type="text" placeholder="enter text">
+    <input type="text" id="image" placeholder="image URL">
+    <button id="add">add</button>
+    <div id="container"></div>
+   
+    <script>
+        let todolist = JSON.parse(localStorage.getItem("todoData")) || [];
+
+        let text = document.querySelector("#text");
+        let add = document.querySelector("#add");
+        let container = document.querySelector("#container");
+        let image = document.querySelector("#image");
+
+        add.addEventListener("click", () => {
+            if (text.value === "") {
+                alert("Please enter a task");
+                return;
+            }
+
+            todolist.push({ 
+                text: text.value, 
+                image: image.value 
+            });
+
+            localStorage.setItem("todoData", JSON.stringify(todolist));
+            showData();
+        });
+
+        function showData() {
+            container.innerHTML = "";
+            todolist.forEach((element, index) => {
+                let card = document.createElement("div");
+                let para = document.createElement("p");
+                let img = document.createElement("img");
+                img.src = element.image;
+                img.style.width = "100px"; 
+                
+
+                para.innerText = `Name: ${element.text}`;
+                
+                let edit = document.createElement("button");
+                edit.textContent = "edit";
+
+                let del = document.createElement("button");
+                del.textContent = "Delete";
+
+                edit.addEventListener("click", () => {
+                   let newText = prompt("Edit task:", element.text);
+                   let newImage = prompt("Edit image URL:", element.image);
+                   todolist[index] = { text: newText, image: newImage };
+                   localStorage.setItem("todoData", JSON.stringify(todolist));
+                   showData();
+                });
+
+                del.addEventListener("click", () => {
+                  todolist = todolist.filter((ele, i) => i != index);
+                  localStorage.setItem("todoData", JSON.stringify(todolist));
+                  showData();
+                });
+
+                card.append(para, img, del, edit);
+                container.append(card);
+            });
+        }
+
+        showData();
+    </script>
+</body>
+</html>

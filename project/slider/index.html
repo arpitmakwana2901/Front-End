@@ -61,8 +61,13 @@
 
     let array = [
         "https://wallpaperaccess.com/full/1109658.jpg",
-        "https://wallpapercave.com/wp/wp6595540.jpg",
-        "https://cdn.pixabay.com/photo/2023/10/31/05/24/shiva-8354335_960_720.png"
+        // "https://photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg",
+        // "https://wallpapercave.com/wp/wp6595540.jpg",
+        // "https://cdn.pixabay.com/photo/2023/10/31/,05/24/shiva-8354335_960_720.png",
+        "https://photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg",
+        "https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg",
+        "https://photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg",
+        "https://wallpaperheart.com/wp-content/uploads/2018/04/best-scenery-wallpaper-scenery-images.jpg"
     ];
 
     let image = document.getElementById("image");
@@ -78,25 +83,71 @@
         count++
         }
         showData()
+        // nextImage()
     })
 
 
     back.addEventListener("click",()=>{
 
-if(count == 0){
-  count = array.length-1
-}else{
-  count--
-}
-showData()
-})
+        if(count == 0){
+        count = array.length-1
+        }else{
+        count--
+        }
+        showData()      
+    })
 
 function showData(){
   image.src = array[count]
 }
-
 showData()
+
+
+const nextImage = setInterval(() => {
+    if(count == array.length){
+        count=0;
+        
+    }else{
+        count++;
+
+    }
+   
+    image.src = array[count]
+
+    }, 2000);
+    console.log(nextImage);
+
+const backImage = setInterval(()=>{
+    if(count = 0){
+        count = array.length;
+    }else{
+        count--
+    }
+
+    image.src = array[count]
+    },2000)
+
+console.log(backImage);
 
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+// const nextImage = () => {
+    //     if(count == array.length){
+    //         count=0;
+            
+    //     }else{
+    //         count++;
+    //     }
+    
+    //     image.src = array[count]
+    //         setTimeout(nextImage, 2000); 
+    // }
+    // nextImage()

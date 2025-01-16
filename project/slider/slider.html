@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="" id="image" alt="">
+
+    <!-- <button id="next">Next</button>
+    <button id="back"></button> -->
+
+    <script>
+        let array = [
+        "https://photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg",
+        "https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg",
+        "https://photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg",
+        "https://wallpaperheart.com/wp-content/uploads/2018/04/best-scenery-wallpaper-scenery-images.jpg"
+    ];
+
+    let image = document.getElementById("image")
+    // let next = document.getElementById("next")
+    // let back = document.getElementById("back")
+    let count = 0;
+
+    const imageArr = setInterval(() => {
+        if(count ==  array.length-1){
+            count = 0;
+        }else{
+            count++
+        }
+        image.src = array[count];
+    }, 2000);
+
+    console.log(imageArr);
+    
+    </script>
+</body>
+</html>
