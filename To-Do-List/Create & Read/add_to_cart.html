@@ -9,7 +9,7 @@
     <h1>Cart</h1>
     <input id="productName" type="text" placeholder="Enter product name">
     <input type="text" id="productImage" placeholder="Product image URL">
-    <input type="number" id="productQuantity" placeholder="Quantity" min="1">
+    <input type="text" id="productQuantity" placeholder="Quantity" min="1">
     <button id="addProduct">Add to Cart</button>
     <!-- <h2>Cart</h2> -->
     <div id="cartContainer"></div>
@@ -32,11 +32,12 @@
             cart.push({ 
                 name: productName.value, 
                 image: productImage.value, 
+                quantity:productQuantity.value
                 
             });
 
             localStorage.setItem("cartData", JSON.stringify(cart));
-            displayCart();
+       showData()
         });
 
         function showData() {

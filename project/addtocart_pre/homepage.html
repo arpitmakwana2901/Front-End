@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+          /* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        background-color:blue;
+        color: white;
+        height: 50px;
+        width: 100%;
+    }
+
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    li a{
+        color: white;
+        text-decoration: none;
+        justify-content: space-evenly;
+    }
+    img{
+        height: 200px;
+        width: 200px; 
+    }  */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    div{
+        display: flex;
+    }
+    nav {
+        
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        background-color:rgb(18, 156, 140);
+        
+    }
+    
+    ul {
+        
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    li a {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .home-page {
+        height: 95vh;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        gap: 150px;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        flex-wrap: wrap;
+        background-color:grey;
+    } 
+
+    </style>
+    
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./homepage.html">home</a></li>
+                <li><a href="./cartpage.html">cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home-page"></div>
+        <!-- <button id="add">Add</button> -->
+    </main>
+
+    <script>
+        let data = [
+            {
+                id: 1,
+                name: "A14 Pro Max",
+                price: 29.99,
+                category: "Electronics",
+                image: "https://inventstore.in/wp-content/uploads/2024/09/69-scaled.webp"
+            },
+            {
+                id: 2,
+                name: "Living In Venice",
+                price: 300,
+                category: "Books",
+                image:"https://neerajrathore.com/wp-content/uploads/2021/03/sarah-book-1.jpg",
+
+            },
+            {
+                id: 3,
+                name: "PMANIAC",
+                price: 1500,
+                category: "Clothing",
+                image: "https://assets.ajio.com/medias/sys_master/root/20240716/zq34/6696b1be6f60443f315239cb/-473Wx593H-700192431-grey-MODEL.jpg",
+
+            },
+            {
+                id: 4,
+                name: "Product D",
+                price: 9.99,
+                category: "Home Appliances",
+                image: "https://as1.ftcdn.net/jpg/10/60/15/18/1000_F_1060151828_84RcnF5olAZLu8uRTPpTj1LdJxtj89hB.jpg"
+            },
+            {
+                id: 5,
+                name: "Sofa Set",
+                price: 27999,
+                category: "Furniture",
+                image: "https://m.media-amazon.com/images/I/610sNIpxQ7L._SX300_SY300_QL70_FMwebp_.jpg"
+            }
+        ]
+
+        let homepage = document.querySelector("#home-page");
+        // let add = document.getElementById("add");
+        let array = JSON.parse(localStorage.getItem("item-cart"))||[];
+        
+
+        function showData (){
+
+            data.forEach((element,index)=>{
+                
+            // let cardDiv = document.createElement("div");
+            // cardDiv.style.display = "Flex";
+            // cardDiv.style.height = "auto";
+            // cardDiv.style.width ="200px";
+            // cardDiv.style.textAlign = "center"
+            // cardDiv.style.backgroundColor ="white";
+            // cardDiv.style.borderRadius = "10px";
+
+            // let image =  document.createElement("img");
+            // image.src =element.image;
+            // image.style.width = "100%";
+            // image.style.height = "200px";
+            // image.style.borderRadius = "10px";
+
+            
+            // let h3 = document.createElement("h3");
+            // h3.innerText = element.name;
+
+            // let para = document.createElement("p");
+            // para.innerText = element.category;
+            
+
+            // let add = document.createElement("button");
+            // add.innerText = "Add To Cart";
+            // add.style.cursor = "pointer";
+            // add.style.padding = "5px";
+            // add.style.border = "none";  
+            // add.style.backgroundColor = "red";
+            // add.style.color = "white";
+            
+        let cardDiv = document.createElement("div");
+        cardDiv.style.display = "flex";
+        cardDiv.style.flexDirection = "column";
+        cardDiv.style.alignItems = "center";
+        cardDiv.style.justifyContent = "center";
+        cardDiv.style.height = "auto";
+        cardDiv.style.width = "200px";
+        cardDiv.style.textAlign = "center";
+        cardDiv.style.backgroundColor = "white";
+        cardDiv.style.borderRadius = "10px";
+        cardDiv.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+        cardDiv.style.padding = "10px";
+        cardDiv.style.margin = "10px";
+
+        let image = document.createElement("img");
+        image.src = element.image;
+        image.style.width = "100%";
+        image.style.height = "200px";
+        image.style.borderRadius = "10px";
+        image.style.objectFit = "container";
+        image.style.marginBottom = "10px";
+        
+
+        let h3 = document.createElement("h3");
+        h3.innerText = element.name;
+        h3.style.fontSize = "18px";
+        h3.style.color = "#333";
+        h3.style.marginBottom = "5px";
+
+        let para = document.createElement("p");
+        para.innerText = element.category;
+        para.style.fontSize = "14px";
+        para.style.color = "#666";
+        para.style.marginBottom = "10px";
+
+        let add = document.createElement("button");
+        add.innerText = "Add To Cart";
+        add.style.cursor = "pointer";
+        add.style.padding = "10px 15px";
+        add.style.border = "none";
+        add.style.borderRadius = "5px";
+        add.style.backgroundColor = "red";
+        add.style.color = "white";
+        add.style.fontSize = "14px";
+        add.style.fontWeight = "600";
+        add.style.transition = "background-color 0.3s ease, transform 0.2s ease";
+
+        // add.onmouseover = () => {
+        //     add.style.backgroundColor = "darkred";
+        // };
+        // add.onmouseout = () => {
+        //     add.style.backgroundColor = "red";
+        // };
+
+        add.addEventListener("click", () => {
+            array.push(element);
+            localStorage.setItem("item-cart", JSON.stringify(array)); 
+            alert("Added to cart successfully!");
+        });
+
+           
+            cardDiv.append(image, h3, para,add);
+            homepage.append(cardDiv);
+            
+            // add.addEventListener("click",()=>{
+                
+            //     array.push(data);
+            //     // console.log(array);
+            //     alert("added successfully")
+            //     showData();
+
+            // })
+
+            // add.onclick=()=>{
+            //     add_cart(data);
+            // }
+        })
+    }
+
+    showData()
+
+
+    // function add_cart(data){
+    //     array.push(data);
+    //     localStorage.setItem("item-cart", JSON.stringify(array));
+    //     alert("added succsefully");
+    //     showData()
+    // }
+
+    </script>
+</body>
+</html>

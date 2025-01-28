@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update delete</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="add">add</button>
+    <div id="container"></div>
+    <script>
+        let array = JSON.parse(localStorage.getItem("todoData"))||[]
+        let text = document.querySelector("#text")
+        let add = document.querySelector("#add")
+        let container = document.querySelector("#container")
+
+        add.addEventListener("click",()=>{
+            if(text.value == ""){
+                alert("please enter value")
+                return;
+            }
+
+            array.push(text.value)
+            console.log(text.value);
+            localStorage.setItem("todoData",JSON.stringify(array))
+            console.log(array)
+            text.value = ""
+            showData()
+        })
+
+        function showData(){
+            container.innerHTML = ""
+            foreEach((element,index)=>{
+                let card = document.createElement("div")
+                let paragraph = document.createElement("p")
+
+                card.append(p)
+                container.append(card)
+
+                paragraph.innerText = element
+            })
+        }
+
+        showData()
+    </script>
+</body>
+</html>

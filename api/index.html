@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <button id="btn">Fetch Data</button>
+    <div id="container"></div>
+    <script>
+        let btn = document.getElementById("btn")
+        let container = document.getElementById("container")
+
+        function showData(){
+            container.innerHTML = "";
+            fetch("https://dog.ceo/api/breeds/image/random")
+            .then((response)=>response.json())
+            .then((res)=>{
+                console.log(res)
+                let img = document.createElement("img");
+                img.src = res.message;
+                img.style.height = "200px";
+                img.style.width = "200px";
+                container.append(img);
+            })
+            .catch((error)=>{
+                console.log(error,"error")
+            })
+            .finally(()=>{
+                console.log("Fetch Completed")
+            })
+        }
+
+        btn.addEventListener("click",showData);
+        showData();
+    </script>
+</body>
+</html>

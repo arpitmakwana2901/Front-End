@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="add">add</button>
+    <div id="container"></div>
+    <script>
+        let array = JSON.parse (localStorage.getItem("todoData")) || []
+        let text = document.querySelector("#text")
+        let add = document.querySelector("#add")
+        let container = document.querySelector("#container")
+
+        add.addEventListener("click",()=>{
+            if(text.value == " "){
+                alert("Please Enter Value")
+                return
+            }
+
+            console.log(text.value);
+            array.push(text.value);
+            localStorage.setItem("todoData",JSON.stringify(array))
+            console.log(array);
+            text.value = ""
+            showData()
+
+        })
+
+
+        function showData(){
+            container.innerHTML = ""
+            array.forEach((element,index) => {
+                let card = document.createElement("div")
+                let para = document.createElement("p")
+
+                let edit = document.createElement("button")
+                edit.textContent = "Edit";
+
+                let del = document.createElement("button")
+                del.textContent = "Delete"
+
+                card.append(para,edit,del)
+                container.append(card)
+
+                para.innerText = element;
+
+                edit.addEventListener("click",()=>{
+                    let storeValue = prompt(element)
+                    array[index] = storeValue
+                    showData()
+                })
+
+                del.addEventListener("click",()=>{
+                  array =  array.filter((ele,i) => i != index)
+                  showData();
+
+                })
+            });
+        }
+
+        showData()
+    </script>
+</body>
+</html>
