@@ -1,0 +1,187 @@
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 45, 209);
+    color: #ecf0f1;
+    margin: 10px;
+    padding: 15px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: url('./img/image1') no-repeat center center fixed;
+    background-size: cover;
+    transition: background 0.5s ease-in-out;
+}
+
+
+h1 {
+    color: #ecf0f1;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e74c3c;
+    transition: width 0.3s ease;
+}
+
+h1:hover::before {
+    width: 100%;
+}
+
+button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button::before,
+button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #ecf0f1;
+    transition: width 0.4s ease;
+}
+
+button::before {
+    top: 0;
+    left: 0;
+}
+
+button::after {
+    bottom: 0;
+    right: 0;
+}
+
+button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.8);
+}
+
+button:hover::before,
+button:hover::after {
+    width: 50%;
+}
+
+button:hover::before {
+    left: 0;
+}
+
+button:hover::after {
+    right: 0;
+}
+
+#input-text {
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    width: 250px;
+    border-radius: 30px;
+    border: 2px solid #34495e;
+    background-color: #34495e;
+    color: #ecf0f1;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+}
+
+#input-text::placeholder {
+    color: #95a5a6;
+}
+
+#input-text:focus {
+    background-color: rgb(99, 128, 132);
+    border-color: #e74c3c;
+}
+
+#input-text:focus::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e74c3c;
+    transition: width 0.4s ease;
+}
+
+#main-container {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    margin-left: 40%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease; 
+}
+
+#main-container::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+    transition: top 0.5s ease;
+}
+
+#main-container:hover::before {
+    top: 0;
+    opacity: 0.3;
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ecf0f1;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+p::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e74c3c;
+    transition: width 0.4s ease;
+
+    
+}
+
+p:hover::before {
+    width: 100%;
+}
+
+
+#main-container:hover { 
+    background-size: cover;
+    background-image: url(./img/git1);
+    color: black;
+    background-color: blue;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <!-- <link rel="stylesheet" href="weatherAPI.css"> -->
+    <link rel="stylesheet" href="api.css">
+    <title>Weather API</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <p id="weather-info">Enter a city name to get weather details.</p>
+    <div id="input-div">
+      <input type="text" id="input-text" placeholder="Enter city name">
+    </div>
+   <div id="btn-div">
+    <button id="btn" onclick="showWeather()">FIND</button>
+   </div>
+    
+    <div id="main-container"></div>
+    <script>
+      const btn = document.getElementById("btn");
+      const input = document.getElementById("input-text");
+
+      async function showWeather(){
+        if(input.value === ""){
+          alert("Please enter a city name");
+          return
+        }
+        const apiKey = "9b819d968bb6cf5c48accac346ea06d9"
+        const weatherData = await fetch(
+          `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${input.value}` +
+            `&appid=${apiKey}`
+        )
+
+        const data = await weatherData.json();
+        console.log(data);
+        if(data.cod == 200){
+          const mainDiv = document.getElementById("main-container");
+          mainDiv.innerHTML = `
+          <h2>${data.name}</h2>
+          <p>Temperature: ${data.main.temp}°C</p>
+          <p>Humidity: ${data.main.humidity}%</p>
+          <p>Pressure: ${data.main.pressure} hPa</p>
+          <p>Visibility: ${data.visibility / 1000} km</p>
+          <p>Weather: ${data.weather[0].main} - ${data.weather[0].description}</p>
+          <p>Cloudiness: ${data.clouds.all}%</p>
+          <p>Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</p>
+          <p>Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</p>
+          `
+        }else{
+          alert("Invalid city name. Please try again");
+        }
+        input.value = ""
+      }
+    </script>
+  </body>
+</html>

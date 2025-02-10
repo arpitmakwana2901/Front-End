@@ -215,6 +215,51 @@
         para2.style.color = "#666";
         para2.style.marginBottom = "10px";
 
+        let quantityContainer = document.createElement("div");
+            quantityContainer.style.display = "flex";
+            quantityContainer.style.alignItems = "center";
+            quantityContainer.style.marginBottom = "10px";
+
+
+         let decrease = document.createElement("button");
+            decrease.innerText = "-";
+            decrease.style.cursor = "pointer";
+            decrease.style.padding = "5px 10px";
+            decrease.style.border = "none";
+            decrease.style.borderRadius = "5px";
+            decrease.style.backgroundColor = "red";
+            decrease.style.color = "white";
+            decrease.style.fontSize = "14px";
+            decrease.style.fontWeight = "600";
+            decrease.style.marginRight = "5px";
+           
+
+        let quantityDisplay = document.createElement("span");
+            quantityDisplay.innerText = "0";
+            quantityDisplay.style.fontSize = "16px";
+            quantityDisplay.style.fontWeight = "bold";
+            quantityDisplay.style.margin = "0 5px";
+
+            let increase = document.createElement("button");
+            increase.innerText = "+";
+            increase.style.cursor = "pointer";
+            increase.style.padding = "5px 10px";
+            increase.style.border = "none";
+            increase.style.borderRadius = "5px";
+            increase.style.backgroundColor = "green";
+            increase.style.color = "white";
+            increase.style.fontSize = "14px";
+            increase.style.fontWeight = "600";
+            increase.style.marginLeft = "5px";
+           
+            let cartItem = array.find((item) => item.id === element.id);
+            quantityDisplay.innerText = cartItem ? cartItem.quantity : "0";
+
+            decrease.addEventListener("click", () => updateQuantity(element.id, -1, quantityDisplay));
+            increase.addEventListener("click", () => updateQuantity(element.id, 1, quantityDisplay));
+
+            quantityContainer.append(decrease, quantityDisplay, increase);
+
         let add = document.createElement("button");
         add.innerText = "Add To Cart";
         add.style.cursor = "pointer";
@@ -227,23 +272,58 @@
         add.style.fontWeight = "600";
         add.style.transition = "background-color 0.3s ease, transform 0.2s ease";
 
-        add.addEventListener("click", () => {
-            array.push(element);
-            localStorage.setItem("item-cart", JSON.stringify(array)); 
-            alert("Added to cart successfully!");
-        });
-           
-            cardDiv.append(image, h3, para,para2,add);
+        
+        // add.addEventListener("click", () => {
+        //     updateQuantity(element.id, 1);
+        //     localStorage.setItem("item-cart", JSON.stringify(array));
+        //     alert("Added Successfully")
+        //     showData()
+        // });
+        
+        // The function that handles both increasing and decreasing the quantity
+function updateQuantity(id, change, quantityDisplay) {
+    // Find the product in the cart
+    let index = array.findIndex((item) => item.id === id);
+
+    // If the product is already in the cart, update its quantity
+    if (index !== -1) {
+        array[index].quantity += change;
+        if (array[index].quantity <= 0) {
+            array.splice(index, 1); // Remove item if quantity is zero
+        }
+    } else if (change > 0) {
+        let item = data.find((el) => el.id === id);
+        array.push({ ...item, quantity: 1 });
+    }
+
+    // Update local storage
+    localStorage.setItem("item-cart", JSON.stringify(array));
+
+    // Update the displayed quantity
+    let cartItem = array.find((item) => item.id === id);
+    quantityDisplay.innerText = cartItem ? cartItem.quantity : "0";
+
+    // Optionally, re-render the page to show updates
+    showData();
+}
+
+// Modified event listener for "Add to Cart" button
+add.addEventListener("click", () => {
+    updateQuantity(element.id, 1, quantityDisplay);  // Pass quantityDisplay to update UI immediately
+    alert("Added Successfully");
+});
+
+
+            cardDiv.append(image, h3, para,para2,quantityContainer,add);
             homepage.append(cardDiv);
 
         })
     }
-   
+
     categoryFilter.addEventListener("change", (e) => {
             showData(e.target.value);
         });
         showData();
-
         
     </script>
 </body>

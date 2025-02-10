@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p>Hello</p>
+    </div>
+    
+
+<form id="formData">
+    <input type="text">
+  <button id="btn">Click Here</button>
+</form>
+
+<div id="output_box"></div>
+
+<script>
+    const container  = document.getElementById("container")
+const formData = document.getElementById("formData")
+
+
+    const output_box = document.querySelector("#output_box")
+    formData.addEventListener("submit",(event)=>{
+console.log(event)
+event.preventDefault()
+    })
+  
+
+
+</script>
+</body>
+</html>
