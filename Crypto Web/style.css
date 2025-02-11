@@ -1,0 +1,1134 @@
+
+/* CSS grid layout DIWALI */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    border: 2px solid whitesmoke;
+}
+
+.CryptoM5{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    gap: 30px;
+    font-size: 18px;
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: purple;
+    text-decoration: underline;
+  }
+
+.get-s{
+    margin-right: 135px;
+    background-color: rgb(175, 90, 255);
+    padding: 10px;
+    border-radius: 22px;
+    border: none;
+}
+
+.get-s a{
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 25px;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.get-s:hover{
+    color: white;
+    box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69);
+    -webkit-box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69);
+    -moz-box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69); 
+}
+
+.main-section1{
+    /* margin-top: 12px; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 5%;
+}
+.div-left{
+    margin-left: 7%;
+    width: 40%;
+    height: 400px;
+    margin-top: 12%;
+}
+
+
+
+.crypto-platform{
+    color: #8364E2;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* line-height: 1.8; */
+    margin: 0px 0px 15px 0px;
+}
+
+.h2_text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    line-height: 1.1;
+    text-align: left;
+    line-height: 1.2;
+    margin: 0px 0px 25px 0px;
+}
+
+.lorem{
+    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #727272;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.main-img{
+    width: 38%;
+    height: 400px;
+    margin-top: 125px;
+} 
+
+.crypto-img{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    border-radius: 5%;
+    height:450px;
+    width:630px;
+}
+
+.get-started{
+    background-color: rgb(175, 90, 255);
+    padding: 10px;
+    border-radius: 22px;
+    border: none;
+    margin: 25px 25px 25px 0px;
+}
+
+.get-started a{
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 25px;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.get-started:hover{
+    color: white;
+    box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69);
+    -webkit-box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69);
+    -moz-box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69); 
+}
+
+/* section 2 */
+
+
+.main-section2{
+    margin-top: 200px;
+    width: 100%;
+    height: 800px;
+    /* text-align: center; */
+    /* box-sizing: border-box; */
+    
+}
+
+.our-features{
+    color: black;   
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    justify-content: space-evenly;
+    
+}
+
+.dash{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    height: 2px;
+    border: 1px solid black;
+}
+
+.main-div1{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+
+.main-div1:hover{
+    background-color: rgb(157, 211, 255);
+    transition: all 0.3s ease 0.5s ease-in;
+}
+
+.main-div2{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+
+.main-div2:hover{
+    background-color: rgb(136, 202, 255);
+    transition: 0.3s;
+}
+
+.main-div3{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+
+.main-div3:hover{
+    background-color: rgb(136, 202, 255);
+    transition: all 0.3s ease 0.5sease-in;
+}
+
+.main-div4{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+.main-div4:hover{
+    background-color: rgb(136, 202, 255);
+    transition: all 0.3s ease 0.5sease-in;
+}
+
+.wallets-text{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Walltes-lorem{
+    margin-top: 22px;
+    font-size: 22px;
+}
+
+.card-container2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.main-div2{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+
+.main-div5{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+.main-div5:hover{
+    background-color: rgb(136, 202, 255);
+    transition: all 0.3s ease 0.5sease-in;
+}
+
+.main-div6{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+.main-div6:hover{
+    background-color: rgb(136, 202, 255);
+    transition: all 0.3s ease 0.5sease-in;
+}
+
+.main-div7{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+.main-div7:hover{
+    background-color: rgb(136, 202, 255);
+    transition: all 0.3s ease 0.5sease-in;
+}
+
+.main-div8{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(168, 201, 255);
+    padding: 45px 32px;
+    border-radius: 25px;
+}
+.main-div8:hover{
+    background-color: rgb(136, 202, 255);
+    transition: all 0.3s ease 0.5s ease-in;
+}
+
+/* Section 3 */
+.main-section3{
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua; */
+    margin-top: 250px;
+}
+.about-us{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+    
+.left-icon{
+    margin: 75px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+    
+.s3-walltes{
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    align-items: center;
+    width:125px;
+    text-align: center;
+    margin-top: 6px;
+}
+.s3-trade{
+    margin-top: 12px;
+    width: 125px;
+    text-align: center;
+}
+
+.s3-exchange{
+    margin-top: 12px;
+    width: 125px;
+    text-align: center;
+}
+.s3-lorem{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 75px;
+    line-height: 1.5;
+}
+
+.s3-main-div{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+/* Section 4 */
+
+.our-traders{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-1{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-container4{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.main-img1-div{
+    width: 230px;
+    text-align: center;
+    
+}
+
+.john-smith{
+    margin-top: 15px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sarah{
+    margin-top: 15px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.adam{
+    margin-top: 15px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.helen{
+    margin-top: 15px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.s4-lorem{
+    margin-top: 15px;
+    line-height: 1.3;
+    font-size: 20px;
+    width: 210px;
+    text-align: center;
+}
+
+.s4-trader{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.img-2{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img-3{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img-4{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.main-img2-div{
+    width: 230px;
+    text-align: center;
+    /* margin-top: 45px; */
+}
+
+.main-img3-div{
+    width: 230px;
+    text-align: center;
+    /* margin-top: 45px; */
+}
+
+.main-img4-div{
+    width: 230px;
+    text-align: center;
+    /* margin-top: 45px; */
+}
+
+.s4-icon1{
+    margin-top: 15px;
+    margin-left: 40px;
+    display: flex;
+    gap: 15px;
+}
+.s4-facebook{
+    height: 30px;       
+    width: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+/* .s4-facebook:hover{
+    color: blueviolet;
+    transition: all 0.3s ease 0.5s ease-in;
+} */
+
+
+.s4-twiter{
+    height: 30px;
+    width: 30px;
+}
+
+/* .s4-twiter:hover{
+    background-color: red;
+    transition: all 0.3s ease 0.5s ease-in;
+} */
+.s4-instragram{
+    height: 30px;
+    width: 30px;
+}
+
+/* section 5 */
+.main-section5{
+    width: 100%;
+    height: 500px;
+    margin-top: 195px;
+}
+
+.our-skills{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container-s6{
+    display: flex;
+    justify-content: space-around;
+}
+.s5-analysis{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.analysis-img{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.s5-exchange{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.exchange-img{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.marketing{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.marketing-img{
+    margin-top: 10px;
+    width: 70%;
+}
+
+.card-container-s5{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+.card-container-s5-2{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+/* Section-6 */
+
+.pricing-plan{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container-s6{
+    display: flex;
+    gap: 1%;
+}
+.free{
+    font-size: 50px;
+    color: #403f83;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.lorem-s6{
+    font-size: 20px;
+    color: #505050;
+    text-align: center;
+}
+
+.s6-div1{   
+    line-height: 1.8;
+    /* text-align: center; */
+}
+
+.list-s6{
+    font-size: 20px;
+    line-height: 2.2;
+    list-style: none;
+    margin-left: 25px;
+}
+
+.get-s-s6{
+    width: 142px;
+    height: 40px;
+    background: blueviolet;
+    border-radius: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    margin-left: 45px;
+}
+
+.text-s6{
+    text-align: center;
+    align-items: center;
+    color: white;   
+    background-color: #403f83;
+    height: 105px;
+    width: 275px;
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+.text-s6 sub {
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: normal;
+}
+
+/* section-7 */
+.main-section-7{
+    width: 100%;
+    height: 800px;
+    /* background-color: aqua; */
+    margin-top: 120px;
+}
+
+.top-traders{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container-s7{
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+.div-1-s7{
+    display: flex;
+    margin-top: 65px;
+}
+.image-s7{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* display: flex; */
+}
+
+.lorem-1-s7{
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+.nicholas{
+    color: #232323;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.btc-3-5{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-top: 10px;  
+}
+
+.image-container-s7{
+    height: 100px;   
+    width: 100px;
+    position: relative;
+}
+
+.image-s7:hover{
+    border: 8px solid blueviolet;
+    transition: all 0.3s ease 0.5s ease-out;
+}
+.icon-s7{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items:center;
+    height: 40px;
+    width: 40px;
+    background-color: #8364e2;
+    color: white;
+}
+
+/* Section-8 */
+.main-section-8{
+    width: 100%;
+    height: 800px;
+    margin-top: 120px;
+    background-color: #f3f3f3;
+    align-items: center;
+}
+
+.view-in-action{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lorem-s7{
+    text-align: center;
+    line-height: 2.9;
+    font-size: 16px;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.video{
+    height: 550px;
+    width: 1000px;
+    margin-left: 18%;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+/* Section  9*/
+
+.main-section-s9{
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+}
+
+.main-card-container-s9{
+    cursor: pointer;
+}
+.our-article{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.underline-s9{
+    border: 0.2px solid #8364E2;
+    height: 2px;
+    width: 90px;
+    background-color:#8364E2;
+    margin: auto;
+}
+
+.main-card-container-s9{
+    margin-top: 95px;
+}
+
+.card-container-s9{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.div1-s9{
+    height: 500px;
+    width: 320px;
+    background-color: rgb(252, 251, 251);
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    border-radius: 10px;
+    position: relative;
+}
+.wallets-img-s9{
+    margin-top: 55px;
+    width:250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+   
+}
+
+.data-s9{
+    margin-right: 115px;
+}
+.crypto-wallets-s9{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lorem-s9{
+    font-size: 16px;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;   
+    line-height: 30px;
+    width: 100px;
+    margin-left: 40px;
+}
+
+.read-more-s9{
+    color: #8364E2;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 18px;
+    font-weight: bold;
+}
+
+.small-img1-s9{
+    height: 75px;
+    width: 75px;
+    /* background-size: cover; */
+    position: absolute;
+    top: 22px;
+    left: 19px;
+    border-radius: 50%;
+}
+.small-img1-s9{
+    transition:0.3s;
+}
+
+.small-img1-s9:hover{
+    border: 8px solid blueviolet;
+}
+
+/* section 10 */
+.main-section-10{
+    width: 100%;
+    height: 500px;
+    margin-top: 75px;
+}
+
+.our-clients{
+    text-align:  center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.underline-s10{
+    width: 100px;
+    height: 1px;
+    margin: auto;
+    border: 1px solid black;
+}
+.main-card-s10{
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 80px;
+    gap: 15px;
+}
+.card1-s10{
+    height: 160px;
+    width: 200px;
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 3px solid whitesmoke;
+}
+
+.img1-s10{
+    height: 100px;
+    width: 150px;
+}
+
+.card1-s10:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+/* Section 11 */
+.main-section-11{
+    /* margin-top: 100px; */
+    width: 100%;
+    height: 650px;
+    /* height: 500px; */
+    /* background-color: black; */
+}
+
+.main-card-left{
+    width: 50%;
+    /* background-color: blue; */
+}
+
+.left-text{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 125px;
+    margin-top: 200px;
+}
+
+.lorem-left-s11{
+    margin-top: 25px;
+    margin-left: 125px;
+    line-height: 1.8;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.main-card-s11{
+    display: flex;
+    gap: 200px;
+    /* margin: 300px;
+    gap: 150px; */
+    height: 600px;
+}
+
+.main-card-right{
+    /* height: 100px; */
+    /* text-align: center;
+    justify-content: center; */
+    width: 50%;
+    /* background-color: red; */
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+
+.form{
+    background-color: rgb(241, 241, 241);
+    border-radius: 6px;
+    /* text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center; */
+    line-height: 1;
+    width: 500px;   
+    height: 500px;
+    /* padding-bottom: 25%; */
+    /* padding-left: 200px; */
+    /* padding-right: 150px; */
+    /* margin-top: 25px;
+    margin-top: 25px; */
+    padding: 50px;
+    margin: 50px;
+    margin-left: 50px;
+}
+
+
+.contact-us-s11{
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2; 
+}
+
+.lorem-right-s11{
+    font-size: 20px;
+    color: #727272;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.your-name-s11{
+    width: 400px;
+    height: 35px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+
+.email-s11{
+    width: 400px;
+    height: 35px;
+    text-indent: 10px;
+    margin-bottom: 20px;
+}
+
+.message-s11{
+    width: 400px;
+    height: 75px;
+    text-indent: 10px;
+    line-height:30px;
+}
+
+.send-msg-s11{
+        background-color: #8364E2;
+        color: white;
+        font-weight: bold;
+        width: 45%;
+        font-size: 15px;
+        height: 50px;
+        border-radius: 120px;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 25px;
+        cursor: pointer;
+}
+
+.send-msg-s11:hover{
+    color: white;
+    box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69);
+    -webkit-box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69);
+    -moz-box-shadow: 10px 12px 21px -8px rgba(131,100,226,0.69); 
+}
+
+/* Section 12 */
+.main-section-s12{
+    width: 100%;
+    height: 1500px;
+    background-color: red;
+}
+.map{
+    position: relative;
+}
+.map-s12{
+    width: 100%;
+    height: 500px;
+}
+.box-s12{
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 45px;
+    left: 12px;
+    line-height: 2;
+}
+
+.text-1-s12{
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 20px;
+}
+.text-2-s12{
+    font-size: 15px;
+    text-indent: 20px;
+}
+
+/* Footer */
+.main-footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.main-card-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.crypto-m5-text-footer{
+    font-size: 32px;
+    color: #353535;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.copyright-footer{
+    width: 50%;
+    margin-right: 120px;
+}
+
+.copyright-text-footer{
+    font-size: 20px;
+    color: #353535;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 7px;
+}
+.footer-instragram{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-facebook{
+    height: 30px;
+    width: 30px;
+}
+
+.footer-twitter{
+    height: 30px; 
+    width: 30px;
+}
+
+.footer-youtube{
+    height: 30px; 
+    width: 30px;
+    background-color: blue;
+}

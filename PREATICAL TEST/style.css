@@ -1,0 +1,105 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form styling */
+#productForm {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#productForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#productForm input[type="text"],
+#productForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#productForm input[type="text"]:hover,
+#productForm input[type="number"]:hover {
+    border-color: #888;
+}
+
+#productForm input[type="text"]:focus,
+#productForm input[type="number"]:focus {
+    border-color: #555;
+    outline: none;
+}
+
+/* Button styling */
+#add {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#add:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#add:active {
+    transform: scale(0.95);
+}
+
+/* Container styling */
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for container items (if any) */
+#container div {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+#container div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* After transition effect for container items */
+#container div::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s ease;
+}
+
+#container div:hover::after {
+    width: 100%;
+}
