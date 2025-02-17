@@ -1,0 +1,19 @@
+.p2 {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .p3{
+        font-family: "Edu AU VIC WA NT Pre", cursive;
+        font-optical-sizing: auto;
+        font-weight:bold;
+        font-style: normal;
+      }
+    
+.p3:hover{
+    font-size: 15px;
+    color: red;
+    transition: all ease-in 0.3s ease-out 0.5s;
+}

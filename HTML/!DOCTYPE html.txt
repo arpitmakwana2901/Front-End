@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title> Flipcart </title>
+    </head>
+    <body>
+        <h1>Electronics</h1>
+        <hr>
+        <h2><ins>Mobile</ins></h2>
+        <p><strong>Mobile</strong> phones are no more merely a part of our lives. Whether it's to stay connected with friends and family or to keep abreast of important developments around the world, mobiles are no longer for sending a text or making a call.</p>
+        <ul>
+            <li>Vivo</li>
+            <li>I-phone</li>    
+            <li>Samsung</li>
+            <li>Oppo</li>
+            <li>Realme</li>
+        </ul>
+    
+        <h2><ins>TV</ins></h2>
+        <p><strong>TV</strong> results in an exceptional viewing еxpеriеncе, еspеcially in dark rooms. If you are sеarching for a TV undеr <mark>10000</mark>, you can find a variety of options without compromising on quality.</p>
+        <ul>
+            <li>LG</li>
+            <li>Mi</li>
+            <li>Samsung</li>
+            <li>Thomson</li>
+            <li>Motorola</li>
+        </ul>
+
+        <h2><ins>Laptop</ins></h2>
+        <p><strong>laptops</strong> online from brands like <mark>Acer, Asus, Avita, Infinix, Nokia,</mark> and <mark>others</mark> that suit your preference. You can choose a device with a range of applications and features to help you get the most out of your portable computer.</p>
+        <ul>
+            <li>Lenovo</li>
+            <li>Asus</li>
+            <li>Dell</li>
+            <li>HP</li>
+            <li>Acer</li>
+        </ul>
+
+        <h2><ins>Washing Machines</ins></h2>
+        <p><strong>Washing Machines</strong> is (laundry machine, clothes washer, washer, or simply wash) is a machine designed to launder clothing. Modern-day home appliances use electric power to automatically clean clothes.</p>
+        <ul>
+            <li>LG</li>
+            <li>Godrej</li>
+            <li>Midea</li>
+            <li>IFB</li>
+            <li>Bosch</li>
+        </ul>
+        <br>
+
+        <h1>Men</h1>
+        <hr>    
+        <h2><ins>Footwear</ins></h2>
+        <p><strong>Footwear</strong> online due to the extensive collections of brands like Footup, Svaar, Pennen, Bata, PUMA</p>
+        <ul>
+            <li>Sports Shoes</li>
+            <li>Formal Shoes</li>
+            <li>Casual Shoes</li>
+            <li>Loafers</li>
+            <li>Boots</li>
+        </ul>
+
+        <h2><ins>Men's Gromming</ins></h2>
+        <p>With regular care and maintenance, men can master the fundamentals of <strong>good grooming</strong>. From shaving and hairstyling to skincare and beyond, proper grooming should be part of every man's</p>
+        <ul>
+            <li>Deodorants</li>
+            <li>Perfumes</li>
+            <li>Shaving & Aftershave</li>
+        </ul>
+
+        <h2><ins>Top Wear</ins></h2>
+        <p>A <strong>Top Wear</strong> is an item of clothing that covers at least the chest, but which usually covers most of the upper human body between the neck and the waistline. The bottom of tops can be as short as mid-torso, or as long as mid-thigh. Men's tops are generally paired with pants, and women's with pants or skirts.</p>
+        <ul>
+            <li>T-Shirts</li>
+            <li>Formal Shirts</li>
+            <li>Casual Shirts</li>
+        </ul>
+
+        <h2><ins>Bottom Wear</ins></h2>
+        <p>Elegant <strong>bottom wear</strong> for <strong>men</strong> by Snitch. Find everything you need from Chinos to Cargos and Shorts to Joggers at affordable prices! Be it a casual gathering or a formal event, we’ve got versatile pieces</p>
+        <ul>
+            <li>Jeans</li>
+            <li>Casual Trousers</li>
+            <li>Fromal Trousers</li>
+            <li>Shorts</li>
+            <li>cargos</li>
+        </ul>
+        <br>    
+
+        <h1>Women</h1>
+        <hr>
+        <h2><ins>Footwear</ins></h2>
+        <p>The vamp is the piece of leather that covers the space between your toe and ankle. A low vamp is one that ends closer to the toe. A high vamp, on the other hand</p>
+        <ul>
+            <li>Women Flats</li>
+            <li>Women Heels</li>
+            <li>Women Casual Shoes</li>
+            <li>Women Sports Shoes</li>
+            <li>Women Boots</li>
+        </ul>
+
+        <h2><ins>Women Ethinic</ins></h2>
+        <p><strong>Ethinic</strong> wear refers to traditional clothing and attire that is deeply rooted in the cultural heritage of specific regions or communities.</p>
+        <ul>            
+        <li>Women Sarees</li>
+        <li>Women Kurtas</li>
+        <li>WOmen GRowns</li>
+        <li>Ethinic Dresses</li>    
+        <li>Women Salwar Suits</li>
+        </ul> 
+
+        <h2><ins>Women Western</ins></h2>
+        <p>Western wear is a category of men's and <strong>women's clothing</strong> which derives its unique style from the clothes worn in the <mark>19th century</mark> Wild West.</p>
+        <ul>
+            <li>Women Tops</li>
+            <li>Women Dresses</li>
+            <li>Women Jeans</li>
+            <li>Women Nightsuit</li>
+        </ul>
+        <br>
+
+        <h1>Furniture</h1>
+        <hr>
+        <h2><ins>Living Room Furniture</ins></h2>
+        <p> A typical<strong>living room furnishings</strong> may contain sofa, chairs, occasional tables, bookshelves, electric lamps, rugs, and other extra furniture.</p>
+        <ul>
+            <li>SOfas & Couches</li>
+            <li>Sofa Sets</li>
+            <li>Tables</li>
+            <li>Bookshelves</li>
+            <li>Bean Bags</li>
+        </ul>
+
+        <h2><ins>Bedroom Furniture</ins></h2>
+        <p><strong>Bedroom</strong> sets generally include a bed frame, bedside tables, a dresser, and sometimes a wardrobe or chest of drawers. They vary depending on your needs.</p>
+        <ul>
+            <li>Beds</li>
+            <li>Chets of Drawers</li>
+            <li>Mattersses</li>
+            <li>Dressing Tables</li>
+        </ul>
+
+        <h2><ins>Outdoor Furniture</ins></h2>
+        <p><strong>Outdoor Furnitur</strong> means furniture that is specifically designed for use outdoors and is limited to tables, chairs; “Owner” of a Lot means the registered.</p>
+        <ul>
+            <li>Swing Chairs</li>
+            <li>Shade</li>
+            <li>Outdoor Tables</li>
+            <li>Ourdoor Furniture Sets</li>
+            <li>patio Benches</li>
+        </ul>
+
+        <h2><ins>Dining Room Furniture</ins></h2>
+        <p>There are several ways to spice up your dining room with <strong>design ideas, bold furniture, loud colours and wallpapers</strong></p>
+        <ul>
+            <li>Dining Sets</li>
+            <li>Dining Tables</li>
+            <li>Dining Charis</li>
+            <li>Bar Stools</li>
+        </ul>
+
+        <h2><ins>Storage Solution</ins></h2>
+        <p><Strong>Storage solutions</Strong> is the name given to the systems and processes that optimise the storing, picking and shipping of goods from a warehouse.</p>
+        <ul>
+            <li>Chest of Drawers</li>
+            <li>Shoe Racks</li>
+            <li>Bookshelves</li>
+            <li>Wine Racks</li>
+        </ul>
+    </body>
+</html>

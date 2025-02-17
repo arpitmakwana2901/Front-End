@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-between;
+    /* font-weight: bold; */
+    font-size: 17px;  
+    color: white; 
+    text-transform: uppercase;
+}
+
+.name{
+    margin-left: 75px;
+}
+
+.other ul{
+    display: flex;
+    margin-right: 85px; 
+    gap: 17px;
+    list-style: none;
+}
+
+.other ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.other li a:hover{
+    color: rgb(249, 154, 119);
+    transition: all 03s ease 0s;
+}
+
+.main-section{
+    height:500PX;
+    width: 100%;
+    background-color: rgb(0, 255, 0);
+    /* justify-content: center;
+    text-align: center;
+    justify-content: space-between; */
+    float: right;
+    /* padding: 15px; */
+    /* margin: 75px; */
+    /* margin-top: 45px; */
+}
+    
+.main-img img{
+    /* padding: 15px 0;
+    margin: 75px; */
+    height: 500px;
+    width: 50%;
+    /* justify-content: space-between; */
+    float: right;
+}
+
+.message1{
+    margin: 75px 3px 0px 105px;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+}
+
+.lorem{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 34px;
+    margin-top: 35px;
+    
+}
+
+.signup{
+    margin: 225px;
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius:3px;
+}
+
+.learn-more{
+    margin: -135px;
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius:3px;
+}
+
+.signup:hover{
+    color: rgb(249, 154, 119);
+    transition: all 03s ease 0s;
+}
+
+.learn-more:hover{
+    color: rgb(249, 154, 119);
+    transition: all 03s ease 0s;
+}
+
+.img{
+    height: 700px;
+    width: 100%;
+    background-image: cover;
+}
+
+.section2{
+    margin-top: 25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 900px;
+    width: 100%;
+}
+
+.woman-img{
+    position: relative;   
+}
+
+.text{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 526px;
+    margin: 0 0 0 550px ;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lorem2{
+    font-size: 17px;
+    position: absolute;
+    color: white;
+    top: 680px;
+    margin-left: 425px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.copywriting{
+    height: 250px;
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    margin: 850px 0px 0px -650px;
+
+}
+
+.copywriting-text{
+    color: white;
+    font-size: 18px;
+    background-color: blue;
+    width: 243px;
+    height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    text-align: center;
+    top: 973px;
+    margin: 126px 1px 50px 114px;
+}   

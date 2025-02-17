@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: blue;
+    display: flex;
+    height: 50px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+.web-name{
+    justify-content: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 55%;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.page{  
+    justify-content: space-evenly;
+    /* word-spacing: 15px; */
+}
+.page ul{
+    /* width: 85px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 13px;
+}
+
+.page li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* margin: 0 15px; */
+    color: white;
+}
+
+.page li a:hover{
+    color:  rgb(249, 154, 119);
+    transition: all 0.3s ease 0s;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(179, 220, 213); */
+    background-color: rgb(210, 250, 199);
+    display: flex;
+    background-size: cover;
+    /* background-position: center; */
+} 
+
+.main-section{
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img img{
+    height: 400px;
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+}
+

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 500px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /* align-self: center; */
+    /* order: 4; */
+    /* flex-grow: 2; */
+    /* flex-basis: 200px; */
+}
+
+.yellow{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    /* align-self: flex-end; */
+    /* order: 1; */
+    /* flex-grow: 2; */
+}
+
+.blue{
+    height: 100px;
+    width: 100px;
+    background-color: blue; 
+    /* order: 2; */
+    /* align-content: baseline ????; */
+    /* flex-grow: 2; */
+}
+
+.green{
+    height: 100px;
+    width: 100px;
+    /* order: 2; */
+    background-color: green;
+    /* align-content: stretch;  ???*/
+    /* flex-grow: 2; */
+}

@@ -1,0 +1,42 @@
+HTML - Creating Website Structure.
+	Button.
+
+CSS - style, Cascading Style Sheet.
+
+JS - Functionality, Logic 
+ 
+SEO - Search Engine Optimization.
+
+ATTRIBUTE - Content behaviour change.
+
+HREF - Hypertext REFerence.
+
+HTML is not cash sensitive.
+<html> = <HTML>	
+<head> = <HEAD>
+
+
+<html> - The component used to design the structure of websites are called HTML tags.
+
+<head> - Information & data display nai thay.
+
+<title> - Main title show chrome ma TAB nu.
+
+<body> - contains all data rendered by the browser.
+
+<a> - Used to add links to your page.
+
+
+<head> :- SEO releted meta data aave.
+
+PG02THH4
+<body> :- Contain all  data.
+
+ASIDE TAG :- create sidebar.	
+
+blackquote TAG
+
+
+THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+
+https://mobirise.com/extensions/termm5/estate-planning-firm/

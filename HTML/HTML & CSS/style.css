@@ -1,0 +1,156 @@
+.icon{
+    font-size: 20px;
+}
+
+.ourfeatures{
+    font-size: 30px;
+}  
+
+.features1{
+    color:rgb(255, 255, 255);
+    background-color: red;
+    font-family: cursive;
+}
+
+.features2{
+    color:rgb(255, 255, 255);
+    background-color: red;
+    font-family: cursive;
+}   
+
+.about{
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.Wallets{
+    font-style: oblique;
+    background-color: rgb(35, 0, 150);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.trade{
+    font-style: oblique;
+    background-color: rgb(35, 0, 150);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.exchange{
+    font-style: oblique;
+    background-color: rgb(35, 0, 150);
+    font-size: 20px;
+    color: white;
+    size-adjust: inherit;
+    text-align: center;
+}
+
+.WalletsP{
+    font-size: 25px;
+    font-style: oblique;
+    background-color: darkgoldenrod;
+    color: white;
+    text-align: center;
+    size-adjust:initial;
+}
+
+.ourtraders{
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.ourtr{
+    color: black;
+    font-weight: bold;
+    font-family:sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.trader{
+    color:white ;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    table-layout: fixed;
+}
+
+.john_name{
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    align-items: center;
+    table-layout: fixed;
+}
+
+.john{
+    color: white;
+    background-color: blueviolet;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.sarah_name{
+    color: white;
+    background-color: green;
+    text-align: center;
+    align-items: center;
+    table-layout: fixed;
+}
+
+/* .ourp{
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+} */
+
+.adam_name{
+    color: white;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    table-layout: fixed;
+}
+
+.helen_name{
+    color: white;
+    background-color: chocolate;
+    text-align: center;
+    align-items: center;
+    table-layout: fixed;
+}
+
+.sarah{
+    color: white;
+    background-color: green;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.adam{
+    color: white;
+    background-color: red;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.helen{
+    color: white;
+    background-color: chocolate;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.john_p{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-family:cursive;
+
+}

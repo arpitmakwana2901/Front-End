@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 50px;
+        }
+
+        .loader{
+            height: 50px;
+            width: 50px;
+            border: 5px solid grey;
+            border-radius: 50%;    
+            border-top-color: black;
+            animation: rotate 1s infinite;
+        }
+        .bell{  
+            transform:rotate(0deg);
+        }
+
+        @keyframes rotate{
+            100%{
+                rotate: 350deg;
+            }
+        }
+         @keyframes shake {
+            10%{
+                rotate: 0deg;
+            }
+
+            30%,55%{
+                rotate: 85deg;
+            }
+
+            50%,75%{
+                rotate: 55deg;
+            }
+
+            100% {
+                rotate: 0deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bell">
+        <img src="https://i.pinimg.com/736x/d8/e1/e5/d8e1e5a33fc9f00117f591a298e70eee.jpg" alt="bell" height="200px" width="200px">
+    </div>
+
+    <div class="loader"></div>
+</body>
+</html>

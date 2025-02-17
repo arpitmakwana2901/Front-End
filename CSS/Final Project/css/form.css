@@ -1,0 +1,13 @@
+.form{
+    height: 400px;
+    width: 100%;
+}
+
+fieldset{
+    border: 2px solid blue;
+}
+legend{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;  
+}

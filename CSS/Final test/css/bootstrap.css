@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-search{    
+    display: flex;
+    background-color: blue;
+    border: none;
+    height: 35px;
+    border-radius:2px;
+}
+
+.search-input{
+    width: 450px;
+    height: 35px;
+    align-items: center;
+    border: none;
+    
+}
+
+.amazon-main-div{
+    margin-right: 50px;
+}
+
+.search-icon{
+    height: 35px; 
+    width: 40px;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(234, 207, 102);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search-select{
+    height: 35px;
+    width: 45px;
+    border: none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: rgb(227, 224, 224);
+    align-items: center;
+    text-align: center;
+}

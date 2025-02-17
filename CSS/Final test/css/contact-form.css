@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-form-container{
+    height: 355px;
+    width: 400px;
+    margin: 150px;
+    padding: 25px;
+    background-color: rgb(255, 0, 0);
+    background-image: url('../image/jungle-image.jpg');
+    margin-left: 525px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Create-a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding: 5px;
+}
+
+.enter-name{
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+}
+
+.name-plhd{
+    margin-left:65px;
+}
+
+.email-name{
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+}
+
+.email-plhd{
+    margin-left: 41px;
+}
+
+.user-name{
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+}
+
+.user-plhd{
+    margin-left: 33px;
+}
+
+.password{
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+}
+
+.password-plhd{
+    margin-left: 36px;
+}
+
+.conform-p{
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+}
+
+.conform-p-plhd{
+    margin-left:12px;
+}
+
+.clear-form{
+    border-radius: 0.5rem;
+    padding:7px 15px;
+    border: none;
+    color: white;
+    background: purple;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.submit-form{
+    border-radius: 0.5rem;
+    padding:7px 15px;
+    border: none;
+    color: white;
+    background: #2803fb;
+    margin-left: 15px;
+}

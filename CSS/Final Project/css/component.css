@@ -1,0 +1,36 @@
+.main-section{
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+
+.blue-div{
+  width: 75%;  
+  background-color: blue;
+  color: white;
+}
+
+.yellow-div{
+    width: 55%;
+    background-color: yellow;
+    color: black;
+}
+
+.cyan-div{
+    width: 75%;
+    background-color: cyan;
+    color: black;
+}
+
+.green-div{
+    width: 61%;
+    background-color: green;
+    color: white;
+}
+
+.red-div{
+    width: 100%;
+    background-color: red;
+    color: white;
+}

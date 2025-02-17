@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style5.css">
+    <style>
+        #container img {
+            width: 100px;
+            margin: 5px;
+        }   
+    </style>
+</head>
+<body>
+    <form id="productForm">
+        <label for="productName">Name:</label>
+        <input type="text" id="productName" placeholder="Product Name" required>
+
+        <label for="productPrice">Price:</label>
+        <input type="number" id="productPrice" placeholder="Price" required>
+
+        <label for="productImage">Image:</label>
+        <input type="text" id="productImage" placeholder="Image URL" required>
+
+        <label for="productCategory">Category:</label>
+        <input type="text" id="productCategory" placeholder="Category" required>
+
+    </form>
+
+    <button id="add" type="button">Add Product</button>
+
+    <label for="sortSelect">Sort by:</label>
+    <select id="sortSelect">
+        <option value="none">None</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+        <option value="category">Category</option>
+    </select>
+    
+    <label for="searchInput">Search:</label>
+    <input type="text" id="searchInput" placeholder="Search by name">
+  
+
+<label for="filterSelect">Filter by category:</label>
+<select id="filterSelect">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+    <option value="books">Books</option>
+</select>
+
+
+    <div id="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

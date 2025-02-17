@@ -1,0 +1,41 @@
+.external-css{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color :black;
+    font-style: oblique;
+}
+
+*{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    background-color:rgb(121, 217, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#table{
+    background-color: black;
+    height: 50px;
+    tab-size: 50px;
+}
+
+.heading{
+    background-color: red;
+    color: aliceblue;
+
+}
+
+#cricket{
+    background-color: blue;
+    color:aliceblue;
+}
+
+#ronaldo{
+    background-color: yellow;
+    color: aliceblue;
+}
+
+h3{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:slateblue;
+}

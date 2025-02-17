@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Hover Effect with Position</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+    }
+
+    /* Button container */
+    .button-container {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    /* "Start now" button */
+    .btn-start {
+      background-color: #5ad3c0;
+      color: #000;
+      border: 2px solid #5ad3c0;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-start:hover {
+      transform: translateY(-5px); /* Move up slightly */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+    }
+
+    /* Social media icons */
+    .icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #5ad3c0;
+      border-radius: 50%;
+      border: 2px solid #5ad3c0;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: translateY(-5px); /* Move up slightly */
+      background-color: #fff; /* Change background color */
+    }
+
+    .icon img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="#" class="btn-start"><button>Start now →</button></a>
+    <div class="icon">
+      <img src="facebook-icon.png" alt="Facebook">
+    </div>
+    <div class="icon">
+      <img src="twitter-icon.png" alt="Twitter">
+    </div>
+    <div class="icon">
+      <img src="instagram-icon.png" alt="Instagram">
+    </div>
+  </div>
+</body>
+</html>

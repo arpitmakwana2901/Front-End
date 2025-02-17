@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Group Selector */
+/* div, h1{
+    color:brown;
+} */
+
+/* Descentdant selector */
+/* .box1 p{
+    background-color: blueviolet;
+} */
+
+/* Child Selector */
+    /* pseudo elements */
+    /* p::first-line{
+     color: blueviolet;
+     font-weight: 900;
+     font-size: 25px;
+     } */
+
+    /* .main-container :first-child {
+      background-color: green;
+    } */
+
+     /* .main-container :last-child {
+      background-color: crimson;
+    } */
+  
+    .main-container :nth-child(2){
+        background-color: chartreuse;   
+    }
+
+    /* p::selection {
+        background-color: blue  ;
+        color: white;
+      }
+
+      h1::selection {
+        background-color: rgb(238, 255, 0);
+        color: rgb(235, 5, 5);
+      } */
+
+        /* // pseudo Classes */
+        /* h1:hover {
+            background-color: yellow;
+          }
+        
+          p:hover{
+            background-color: black;
+            color: white;
+            font-size:25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          } */

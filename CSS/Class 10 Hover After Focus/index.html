@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            transition: all ease-in 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box:hover{
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            height: 200px;
+            width: 400px;    
+        }   
+
+        p:hover:after{
+            content:"😆";
+            height: 200px;  
+            /* background-color: red; */
+        }
+
+        .emoji:hover::before{
+            content: "👋";
+            height: 500px;  
+            transition: 3s;
+            transition-duration: 3s;
+            transition-property: width;
+            font-size: 25px;
+        }
+
+        input:focus{
+        background-color:blue;
+        color: white;
+        height: 20px;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: optional;
+        }   
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <p>good morning</p>
+    <div class="emoji">
+        Hello World 
+    </div>
+
+    <input type="text" >
+</body>
+</html>

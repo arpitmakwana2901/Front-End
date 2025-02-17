@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascading Style Sheets (CSS)</title>
+    <style>
+        #internal-css{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            background-color: rgb(0, 63, 139);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p{
+            color:rgb(69, 221, 255);
+            font-size: 30px;
+            background-color:rgb(255, 0, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+<body>
+    <!-- Inline CSS -->
+    <h2 style="color: rgb(152, 16, 16)">Inline CSS</h2>
+    <!-- Internal CSS -->
+    <p id="internal-css">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptates
+        dolor neque sequi sint, labore vero, voluptas natus unde et quasi illum
+        veniam repudiandae tempore atque mollitia sed voluptate ipsa?
+    </p>
+
+    
+    <p>   
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum est soluta deserunt eos facere pariatur perferendis, quaerat blanditiis beatae cum veritatis porro inventore incidunt dicta eum aliquid, id quia!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vel unde aut numquam quaerat fuga, esse, quos consectetur neque autem rem impedit, nihil enim. Beatae amet ipsa iusto aliquid voluptates.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita eveniet quod quidem, unde animi suscipit cum corrupti excepturi eos repellat aliquid ut corporis neque cupiditate sed architecto, reiciendis porro?
+    </p>
+
+    <font>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, corrupti. Deleniti hic illo, alias praesentium accusantium quis perferendis, ipsa distinctio repudiandae asperiores ratione impedit accusamus laudantium perspiciatis magnam eligendi. Autem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, officiis! Aperiam impedit, eos consectetur, perspiciatis, doloremque quam ad nostrum praesentium nesciunt sit eveniet reprehenderit harum a. Hic rerum ipsam debitis.
+    </font>
+    
+    <!-- External CSS -->
+     <p class="external-css">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur, repellendus tempora cum sapiente corporis perferendis rerum aperiam quaerat nisi porro at maiores ab nulla ullam optio nobis soluta consequatur?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi commodi accusantium et dolore! Nemo modi assumenda porro. Aspernatur et perferendis velit iusto inventore, magni, in unde facilis magnam similique nesciunt.
+     </p>
+
+     <table id="table" border="">
+        <caption class="Caption"><h3>International Game</h3></caption>
+        <thead>
+            <tr>
+                <th class="heading">Cricket</th>
+                <th class="heading">Football</th>
+                <th class="heading">Volleyball</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="cricket">Rohit Sharma</td>
+                <td>Lionel Messi</td>
+                <td>Yash Debnath</td>
+            </tr>
+
+            
+
+            <tr>
+                <td id="cricket">Virat Kohli</td>
+                <td id="ronaldo" align="center" colspan="2">Cristiano Ronaldo</td>
+                <!-- <td>Tanmay</td> -->
+            </tr>
+
+            <tr>
+                <td id="cricket">MS Dhoni</td>
+                <td>Robert</td>
+                <td align="center">Jack Kumar</td>
+            </tr>
+        </tbody>
+    </table>    
+
+    </body>
+</html>

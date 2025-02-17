@@ -1,0 +1,16 @@
+:root{
+    --define-color:red;
+    --define-font-size:20px;
+}
+
+.p5{
+    color: var(--define-color);
+    font-size: var(--define-font-size);
+}
+
+.p5:hover{
+    color: blue;
+    transition: ease 0.3ms;
+    font-family: cursive;
+    font-size: 15px;
+}
