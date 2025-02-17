@@ -7,12 +7,15 @@
 
 /* Form styling */
 #productForm {
-    max-width: 400px;
+    max-width: 400px;   
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661502649283-330d46ee061b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjB3b3JraW5nJTIwb24lMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #productForm label {
@@ -76,30 +79,245 @@
     background-color: #f9f9f9;
 }
 
-/* Hover effect for container items (if any) */
 #container div {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     background-color: white;
-    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+    transition: transform 0.3s ease;
 }
 
 #container div:hover {
+    transform: translateY(-10px);
+}
+
+#container div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.3), rgba(0, 204, 255, 0.3));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#container div:hover::before {
+    opacity: 1;
+}
+
+#container h1 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+#container p {
+    margin: 5px 0;
+}
+
+#container img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#container img:hover {
+    transform: scale(1.1);
+}
+
+#container button {
+    background-color: #ff4b5c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#container button:hover {
+    background-color: #ff1e3c;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    outline: none;
+}
+
+div.card{
+    display: flex;
+    background-color: black;
+}
+
+button.edit {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+button.del {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Hover effect for Edit button */
+button.edit:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for Delete button */
+button.del:hover {
+    background-color: #e53935; /* Darker red */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for button click */
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Dropdown and search input styling */
+#sortSelect, #filterSelect, #searchInput {
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#sortSelect:hover, #filterSelect:hover, #searchInput:hover {
+    border-color: #888;
+}
+
+#sortSelect:focus, #filterSelect:focus, #searchInput:focus {
+    border-color: #555;
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #productForm, #add, #container {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #container div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Search input styling */
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchInput:hover {
+    border-color: #888;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Filter and Sort dropdown styling */
+#filterSelect,
+#sortSelect {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#filterSelect:hover,
+#sortSelect:hover {
+    border-color: #888;
+}
+
+#filterSelect:focus,
+#sortSelect:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Label styling for search, filter, and sort */
+label[for="searchInput"],
+label[for="filterSelect"],
+label[for="sortSelect"] {
+    display: block;
+    text-align: center;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Container for search, filter, and sort */
+.search-filter-sort-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* After transition effect for container items */
-#container div::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #007bff;
-    transition: width 0.3s ease;
+/* Hover effect for dropdown options */
+#filterSelect option:hover,
+#sortSelect option:hover {
+    background-color: #007bff;
+    color: white;
 }
 
-#container div:hover::after {
-    width: 100%;
+#filterSelect,
+#sortSelect {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007BFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+
+#filterSelect:hover,
+#sortSelect:hover {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%230056b3%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
 }
