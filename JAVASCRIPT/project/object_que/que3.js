@@ -10,16 +10,6 @@
 //     }
 // };
 
-
-
-const gradebook = { 
-    grade : [],
-    addGrades: function() {
-        this.grade.push;
-    }
-};
-
-
 const grade = [
     {
         name:'TV',
@@ -36,6 +26,16 @@ const grade = [
         grade:'C',
     },
 ]
+
+
+const gradebook = { 
+    grade : [],
+    addGrades: function() {
+        this.grade.push;
+    }
+};
+
+
 
 gradebook.addGrades();
 console.log(grade);

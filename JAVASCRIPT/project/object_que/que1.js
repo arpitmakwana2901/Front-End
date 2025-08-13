@@ -9,44 +9,38 @@
 //         // Logic to add books to the object
 //     }
 // };
-
-// const library = {
-//     books: [],
-//     print: function() {
-//         this.books.push;
-//     }
-// };
-
-// const books =[
-//     { 
-//         title: "MCA",
-//          author: "IT",
-//           year: 2010
-//     },
-
-//     { title: "BCA",
-//      author: "IT",
-//       year: 2015,
-//     },
-// ]
-
-// library.print();
-// console.log(books);
-
-
-const book = [
-    {
-        "title":"MCA",
-        "author":"IT",
-        "year":"2010",
+const books =[
+    { 
+        title: "MCA",
+         author: "IT",
+          year: 2010
     },
-
-    {
-        "title":"BCA",
-        "author":"IT",
-        "year":"2020",
-    },
-    
 ]
+const library = {
+    books: [],
+    print: function() {
+        this.books.push;
+    }
+
+};
+
+library.print();
+console.log(books);
+
+
+// const book = [
+//     {
+//         "title":"MCA",
+//         "author":"IT",
+//         "year":"2010",
+//     },
+
+//     {
+//         "title":"BCA",
+//         "author":"IT",
+//         "year":"2020",
+//     },
+    
+// ]
 
 
