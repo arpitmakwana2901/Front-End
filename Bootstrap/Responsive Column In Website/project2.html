@@ -1,0 +1,67 @@
+<!-- Min-width Project Submit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Columns (Min-width)</title>
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr; /* Default: 1 column */
+        gap: 20px;
+      }
+      .column-box {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+        transition: transform 0.2s;
+      }
+      .column-box:hover {
+        transform: scale(1.05);
+      }
+
+      /* min-width breakpoints */
+      @media (min-width: 576px) {
+        .row {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        }
+      }
+      @media (min-width: 768px) {
+        .row {
+          grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        }
+      }
+      @media (min-width: 992px) {
+        .row {
+          grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column-box">Home</div>
+        <div class="column-box">About</div>
+        <div class="column-box">Features</div>
+        <div class="column-box">Services</div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
