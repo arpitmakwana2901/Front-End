@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Example</title>
+    <style>
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        justify-content: space-around;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 1rem;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .image-container img {
+        max-width: 400px; /* Limit size on big screens */
+        width: 100%; /* Responsive scaling */
+        height: auto; /* Keep aspect ratio */
+        border-radius: 8px; /* (optional) rounded corners */
+      }
+
+      .image-container {
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav ul li {
+          margin: 0.5rem 0;
+        }
+
+        .image-container img {
+          max-width: 100%; /* Take full width on small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul style="display: flex; justify-content: space-around">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div
+      style="
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      "
+    >
+      <div class="image-container">
+        <picture>
+          <source srcset="mahadev.jpg" media="(max-width: 600px)" />
+          <img src="./1.jpg" alt="image1" />
+        </picture>
+        <p>Description for image 1</p>
+      </div>
+
+      <div class="image-container">
+        <picture>
+          <source srcset="./Mahadev.webp" media="(max-width: 600px)" />
+          <img src="./2.jpg" alt="image2" />
+        </picture>
+        <p>Description for image 2</p>
+      </div>
+    </div>
+  </body>
+</html>
